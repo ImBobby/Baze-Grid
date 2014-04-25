@@ -1,0 +1,12 @@
+{
+  "name": "baze-grid",
+  "version": "0.1.0",
+  "description": "Baze Grid percentage base grid system",
+  "authors": "Bobby",
+  "devDependencies": {
+    "gulp": "~3.6.2",
+    "gulp-util": "~2.2.14",
+    "gulp-ruby-sass": "~0.4.3",
+    "gulp-autoprefixer": "0.0.7"
+  }
+}

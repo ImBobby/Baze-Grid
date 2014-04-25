@@ -1,0 +1,12 @@
+{
+  "name": "baze-grid",
+  "version": "0.1.0",
+  "description": "Baze Grid percentage base grid system",
+  "main": ["baze-grid.scss", "baze-grid.css"],
+  "authors": "Bobby",
+  "homepage": "https://github.com/ImBobby/Baze-Grid",
+  "ignore": [
+    "gulpfile.js",
+    "example.html"
+  ]
+}
