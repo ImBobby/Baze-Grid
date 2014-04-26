@@ -25,8 +25,8 @@ Baze Grid is a flexible, percentage base grid system. Adapted from [Bootstrap](h
 
 ```HTML
 <div class="grid">
-    <div class="grid__col {modifier}">Size 6</div>
-    <div class="grid__col {modifier}">Size 6</div>
+    <div class="grid__col {modifier}">...</div>
+    <div class="grid__col {modifier}">...</div>
 </div>
 ```
 
@@ -69,7 +69,7 @@ Stacked column on small, equal size column on medium, and 1:2 size column on lar
 </div>
 ```
 
-[Check example.html](for more examples)
+Check example.html for more examples
 
 ##Browser support
 
