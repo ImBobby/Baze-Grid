@@ -50,6 +50,7 @@ $GRID_GUTTER    : 25px;
     @for $i from 1 through $GRID_COUNT {
         .grid__col--m#{$i} {
             width: grid_size($i);
+            margin-left: 0;
         }
 
         .grid__col--off-m#{$i} {
@@ -64,6 +65,7 @@ $GRID_GUTTER    : 25px;
     @for $i from 1 through $GRID_COUNT {
         .grid__col--l#{$i} {
             width: grid_size($i);
+            margin-left: 0;
         }
 
         .grid__col--off-l#{$i} {
