@@ -17,7 +17,7 @@ Baze Grid is a flexible, percentage base grid system. Adapted from [Bootstrap](h
 
 ##Install
 
-[Bower](http://bower.io/): `bower install baze-grid` or from the [project page](https://github.com/ImBobby/Baze-Grid)
+[Bower](http://bower.io/): `bower install baze-grid` or download the latest [zip file](https://github.com/ImBobby/Baze-Grid/releases)
 
 
 ##How to use
