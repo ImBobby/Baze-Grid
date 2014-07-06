@@ -11,6 +11,7 @@ Baze Grid is a flexible, percentage base grid system. Adapted from [Bootstrap](h
     - Medium, 639px - 1023px.
     - Large, 1024px - beyond.
 - Support offset
+- Support grid without gutter
 - [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)-ish markup
 
 
@@ -25,6 +26,15 @@ Baze Grid is a flexible, percentage base grid system. Adapted from [Bootstrap](h
 
 ```HTML
 <div class="grid">
+    <div class="grid__col {modifier}">...</div>
+    <div class="grid__col {modifier}">...</div>
+</div>
+```
+
+to use grid without gutter add `grid--no-gutter` class
+
+```HTML
+<div class="grid grid--no-gutter">
     <div class="grid__col {modifier}">...</div>
     <div class="grid__col {modifier}">...</div>
 </div>
