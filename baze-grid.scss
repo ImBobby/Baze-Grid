@@ -15,14 +15,14 @@ $BZ_GRID_LARGE  : 64 * 1em;
 // Style
 // --------------------------------------------------------------------------- */
 
-%clearfix:after {
+%bz_clearfix:after {
     display: table;
     clear: both;
     content: '';
 }
 
 .grid {
-    @extend %clearfix;
+    @extend %bz_clearfix;
 
     margin-left: $BZ_GRID_GUTTER * -1;
     box-sizing: border-box;
@@ -58,10 +58,13 @@ $BZ_GRID_LARGE  : 64 * 1em;
 
 @media screen and (min-width: #{$BZ_GRID_MEDIUM}) {
 
+    [class^="grid__col--m"] {
+        margin-left: 0;
+    }
+
     @for $i from 1 through $BZ_GRID_COUNT {
         .grid__col--m#{$i} {
             width: bz_grid_size($i);
-            margin-left: 0;
         }
 
         .grid__col--off-m#{$i} {
@@ -73,10 +76,13 @@ $BZ_GRID_LARGE  : 64 * 1em;
 
 @media screen and (min-width: #{$BZ_GRID_LARGE}) {
 
+    [class^="grid__col--l"] {
+        margin-left: 0;
+    }
+
     @for $i from 1 through $BZ_GRID_COUNT {
         .grid__col--l#{$i} {
             width: bz_grid_size($i);
-            margin-left: 0;
         }
 
         .grid__col--off-l#{$i} {
