@@ -124,7 +124,7 @@
 }
 
 @media screen and (min-width: 40em) {
-  [class^="grid__col--m"] {
+  [class*="grid__col--m"] {
     margin-left: 0;
   }
 
@@ -225,7 +225,7 @@
   }
 }
 @media screen and (min-width: 64em) {
-  [class^="grid__col--l"] {
+  [class*="grid__col--l"] {
     margin-left: 0;
   }
 
