@@ -1,71 +1,100 @@
-<!doctype html>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Baze-grid by ImBobby</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Baze-grid</h1>
-        <p>Baze Grid is a percentage base grid system</p>
+    <meta name="description" content="Baze Grid is a responsive, flexible, percentage base grid system offering clean markup by utilizing both class and data attribute.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <p class="view"><a href="https://github.com/ImBobby/Baze-Grid">View the Project on GitHub <small>ImBobby/Baze-Grid</small></a></p>
+    <title>Baze Grid - Responsive and Flexible Grid System</title>
 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+    <a href="https://github.com/ImBobby/Baze-Grid">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
+        <span class="sr-only">fork me on github</span>
+    </a>
 
-        <ul>
-          <li><a href="https://github.com/ImBobby/Baze-Grid/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/ImBobby/Baze-Grid/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/ImBobby/Baze-Grid">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="title">Baze Grid <span class="version">v2.0.0</span></h1>
+            <p>Baze Grid is a responsive, flexible, percentage base grid system offering clean markup by utilizing both class and data attribute.</p>
+            <iframe src="http://ghbtns.com/github-btn.html?user=ImBobby&repo=Baze-Grid&type=watch&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+        </div>
+    </header>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+    <main>
+        <div class="container">
+            <section id="features">
+                <h2>
+                    <a class="heading-anchor" href="#features">Features</a>
+                </h2>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+                <ul>
+                    <li>12 Columns (default).</li>
+                    <li>25px gutter size (default)</li>
+                    <li>Configurable SCSS file</li>
+                    <li>
+                        3 Breakpoints
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+                        <ul>
+                            <li><strong>small</strong>, 0 - 639px</li>
+                            <li><strong>medium</strong>, 640px - 1023px</li>
+                            <li><strong>large</strong>, 1024px - beyond</li>
+                        </ul>
+                    </li>
+                    <li>Offset</li>
+                    <li>No gutter grid</li>
+                </ul>
+            </section>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+            <section id="install">
+                <h2>
+                    <a class="heading-anchor" href="#install">Install</a>
+                </h2>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+                <p>You can get it via bower.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<pre>
+<code>bower install baze-grid --save</code>
+</pre>
+            
+            <p>or download the latest <a href="https://github.com/ImBobby/Baze-Grid/releases">zip file</a> then include the css file in head.</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<pre>
+&lt;link rel="stylesheet" href="path/to/baze-grid.css">
+</pre>
+            </section>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+            <section id="howToUse">
+                <h2>
+                    <a class="heading-anchor" href="#howToUse">How to use</a>
+                </h2>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+                <div class="example">asd</div>
+            </section>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+            <section id="browserSupport">
+                <h2>
+                    <a class="heading-anchor" href="#browserSupport">Browser support</a>
+                </h2>
+                
+                <p>Baze Grid has been tested and work awesomely in IE8 (with <a href="https://github.com/scottjehl/Respond">respondjs polyfill</a> if you need responsive support) and other evergreen browsers.</p>
+            </section>
+        </div>
+    </main>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/ImBobby">ImBobby</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+    <footer class="main-footer">
+        <div class="container">
+            <p>Made by Bobby</p>
+            <a href="https://twitter.com/_BobbyLie" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @_BobbyLie</a>
+        </div>
+    </footer>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</body>
 </html>
