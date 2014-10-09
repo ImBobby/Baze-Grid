@@ -44,6 +44,12 @@ h2 {
     margin-bottom: 0.47407407407407em;
 }
 
+h3 {
+    font-size: 1.5em;
+    line-height: 1.06666666666667em;
+    margin-bottom: 1.06666666666667em;
+}
+
 p,
 ol,
 ul,
@@ -69,8 +75,9 @@ pre {
     padding: .8em;
     margin: 0 0 2.05655526992288em 0;
     font: 400 0.778em/2.05655526992288em 'Consolas', 'Menlo', monospace;
+    /*line-height: 1.6em;*/
     color: #fff;
-    background: #333;
+    background: #3f4c6b;
 }
 
 pre code {
@@ -98,7 +105,7 @@ section {
 
 .container {
     width: 95%;
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -143,14 +150,25 @@ section {
 
 .example {
     position: relative;
-    background: #fff;
 }
 
-@media screen and (min-width: 64em) {
+/*@media screen and (min-width: 64em) {
     .example {
         left: -130px;
         width: 960px;
     }
+}*/
+
+.grid-demo {
+    padding: .8em 0;
+    border: solid 1px #ddd;
+    margin-bottom: 1.6em;
+    text-align: center;
+    background: #fff;
+}
+
+.grid-demo .grid-demo {
+    margin-bottom: 0;
 }
 
 .main-footer {

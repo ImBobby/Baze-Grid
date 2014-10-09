@@ -10,6 +10,7 @@
     <title>Baze Grid - Responsive and Flexible Grid System</title>
 
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/baze-grid.css">
     <link rel="stylesheet" href="css/demo.css">
 </head>
 <body>
@@ -70,12 +71,274 @@
 </pre>
             </section>
 
+            <section id="examples">
+                <h2 class="sr-only">
+                    <a class="heading-anchor" href="#examples">Examples</a>
+                </h2>
+
+                <div class="example">
+                    <div class="bzg">
+                        <div class="bzg_c" data-col="s1">
+                            <div class="grid-demo">1</div>
+                        </div>
+                        <div class="bzg_c" data-col="s1" data-offset="s10">
+                            <div class="grid-demo">1</div>
+                        </div>
+                    </div>
+
+                    <div class="bzg">
+                        <div class="bzg_c" data-col="s2">
+                            <div class="grid-demo">2</div>
+                        </div>
+                        <div class="bzg_c" data-col="s2" data-offset="s8">
+                            <div class="grid-demo">2</div>
+                        </div>
+                    </div>
+
+                    <div class="bzg">
+                        <div class="bzg_c" data-col="s3">
+                            <div class="grid-demo">3</div>
+                        </div>
+                        <div class="bzg_c" data-col="s3" data-offset="s6">
+                            <div class="grid-demo">3</div>
+                        </div>
+                    </div>
+
+                    <div class="bzg">
+                        <div class="bzg_c" data-col="s4">
+                            <div class="grid-demo">4</div>
+                        </div>
+                        <div class="bzg_c" data-col="s4" data-offset="s4">
+                            <div class="grid-demo">4</div>
+                        </div>
+                    </div>
+
+                    <div class="bzg">
+                        <div class="bzg_c" data-col="s5">
+                            <div class="grid-demo">5</div>
+                        </div>
+                        <div class="bzg_c" data-col="s5" data-offset="s2">
+                            <div class="grid-demo">5</div>
+                        </div>
+                    </div>
+
+                    <div class="bzg">
+                        <div class="bzg_c" data-col="s6">
+                            <div class="grid-demo">6</div>
+                        </div>
+                        <div class="bzg_c" data-col="s6">
+                            <div class="grid-demo">6</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section id="howToUse">
                 <h2>
                     <a class="heading-anchor" href="#howToUse">How to use</a>
                 </h2>
 
-                <div class="example">asd</div>
+                <p>By default, all the columns are stacked (width 100%). To set the width, pass parameter into <code>data-col</code> attribute and to set the offset, pass parameter into <code>data-offset</code> attribute. both parameter for <code>data-col</code> and <code>data-offset</code> can be combination of these:</p>
+
+                <ul>
+                    <li>s[1-12]. Affect width and offset when screen width is from 0 - 639px.</li>
+                    <li>m[1-12]. Affect width and offset when screen width is from 640px - 1023px.</li>
+                    <li>l[1-12]. Affect width and offset when screen width is from 1024px - beyond.</li>
+                </ul>
+
+<pre>
+&lt;div class="bzg">
+    &lt;div class="bzg_c" data-col="[column-width]" data-offset="[column-offset]">
+        ...
+    &lt;/div>
+    &lt;div class="bzg_c" data-col="[column-width]" data-offset="[column-offset]">
+        ...
+    &lt;/div>
+&lt;/div>
+</pre>                
+            </section>
+
+            <section id="examples">
+                <h2>
+                    <a class="heading-anchor" href="#examples">Examples</a>
+                </h2>
+
+                <h3>Basic grid</h3>
+
+                <div class="example">
+                    <div class="bzg">
+                        <div class="bzg_c" data-col="s6">
+                            <div class="grid-demo">6</div>
+                        </div>
+                        <div class="bzg_c" data-col="s6">
+                            <div class="grid-demo">6</div>
+                        </div>
+                    </div>
+                </div>
+
+<pre>
+&lt;div class="bzg">
+    &lt;div class="bzg_c" data-col="s6">
+        ...
+    &lt;/div>
+    &lt;div class="bzg_c" data-col="s6">
+        ...
+    &lt;/div>
+&lt;/div>
+</pre>
+
+                <h3>Offset</h3>
+                
+                <div class="example">
+                    <div class="bzg">
+                        <div class="bzg_c" data-col="s3">
+                            <div class="grid-demo">3</div>
+                        </div>
+                        <div class="bzg_c" data-col="s3" data-offset="s6">
+                            <div class="grid-demo">3</div>
+                        </div>
+                    </div>
+                </div>
+
+<pre>
+&lt;div class="bzg">
+    &lt;div class="bzg_c" data-col="s3">
+        ...
+    &lt;/div>
+    &lt;div class="bzg_c" data-col="s3" data-offset="s6">
+        ...
+    &lt;/div>
+&lt;/div>
+</pre>
+
+                <h3>Responsive</h3>
+
+                <div class="bzg">
+                    <div class="bzg_c" data-col="s12, m6, l4">
+                        <div class="grid-demo">
+                            small 12 <br>
+                            medium 6 <br>
+                            large 4
+                        </div>
+                    </div>
+                    <div class="bzg_c" data-col="s12, m6, l8">
+                        <div class="grid-demo">
+                            small 12 <br>
+                            medium 6 <br>
+                            large 8
+                        </div>
+                    </div>
+                </div>
+
+                <p><small><em>*Resize browser to see in action.</em></small></p>
+
+<pre>
+&lt;div class="bzg">
+    &lt;div class="bzg_c" data-col="s12, m6, l4">
+        ...
+    &lt;/div>
+    &lt;div class="bzg_c" data-col="s12, m6, l8">
+        ...
+    &lt;/div>
+&lt;/div>
+</pre>
+
+                <div class="bzg">
+                    <div class="bzg_c" data-col="s6, m3, l4" data-offset="l2">
+                        <div class="grid-demo">
+                            small 6 <br>
+                            medium 3 <br>
+                            large 4, large offset 2
+                        </div>
+                    </div>
+                    <div class="bzg_c" data-col="s6, m3, l4" data-offset="m6">
+                        <div class="grid-demo">
+                            small 6 <br>
+                            medium 3, medium offset 6 <br>
+                            large 4
+                        </div>
+                    </div>
+                </div>
+
+<pre>
+&lt;div class="bzg">
+    &lt;div class="bzg_c" data-col="s6, m3, l4" data-offset="l2">
+        ...
+    &lt;/div>
+    &lt;div class="bzg_c" data-col="s6, m3, l4" data-offset="m6">
+        ...
+    &lt;/div>
+&lt;/div>
+</pre>
+
+                <h3>Nested</h3>
+
+                <div class="example">
+                    <div class="bzg">
+                        <div class="bzg_c" data-col="s6">
+                            
+                            <div class="grid-demo">
+                                6
+                                <div class="bzg">
+                                    <div class="bzg_c" data-col="s4">
+                                        <div class="grid-demo">4</div>
+                                    </div>
+                                    <div class="bzg_c" data-col="s8">
+                                        <div class="grid-demo">8</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bzg_c" data-col="s6">
+                            <div class="grid-demo">6</div>
+                        </div>
+                    </div>
+                </div>
+
+<pre>
+&lt;div class="bzg">
+    &lt;div class="bzg_c" data-col="s6">
+        
+        &lt;div class="bzg">
+            &lt;div class="bzg_c" data-col="s4">
+                ...
+            &lt;/div>
+            &lt;div class="bzg_c" data-col="s8">
+                ...
+            &lt;/div>
+        &lt;/div>
+
+    &lt;/div>
+    &lt;div class="bzg_c" data-col="s6">
+        ...
+    &lt;/div>
+&lt;/div>
+</pre>
+
+                <h3>No gutter</h3>
+
+                <div class="example">
+                    <div class="bzg bzg--no-gutter">
+                        <div class="bzg_c" data-col="s6">
+                            <div class="grid-demo">6</div>
+                        </div>
+                        <div class="bzg_c" data-col="s6">
+                            <div class="grid-demo">6</div>
+                        </div>
+                    </div>
+                </div>
+
+<pre>
+&lt;div class="bzg bzg--no-gutter">
+    &lt;div class="bzg_c" data-col="s6">
+        ...
+    &lt;/div>
+    &lt;div class="bzg_c" data-col="s6">
+        ...
+    &lt;/div>
+&lt;/div>
+</pre>
             </section>
 
             <section id="browserSupport">

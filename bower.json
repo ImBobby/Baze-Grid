@@ -1,8 +1,7 @@
 {
   "name": "baze-grid-gh-pages",
   "dependencies": {
-    "jquery": "1.11.1",
     "normalize-css": "~3.0.1",
-    "baze-grid": "~0.6.0"
+    "baze-grid": "~2.0.0"
   }
 }
