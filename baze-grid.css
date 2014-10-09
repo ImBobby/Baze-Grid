@@ -1,25 +1,25 @@
-/*! Baze Validation v1.2.3 | (c) 2014 @_bobbylie | https://github.com/ImBobby/Baze-Grid */
-.grid:after {
+/*! Baze Validation v2.0.0 | (c) 2014 @_bobbylie | https://github.com/ImBobby/Baze-Grid */
+.bzg:after {
   display: table;
   clear: both;
   content: '';
 }
 
-.grid {
+.bzg {
   margin-left: -25px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.grid--no-gutter {
+.bzg--no-gutter {
   margin-left: 0;
 }
-.grid--no-gutter > .grid__col {
+.bzg--no-gutter > .bzg_c {
   padding-left: 0;
 }
 
-.grid__col {
+.bzg_c {
   float: left;
   width: 100%;
   min-height: 1px;
@@ -29,301 +29,301 @@
   box-sizing: border-box;
 }
 
-.grid__col--s1 {
+[data-col*="s1"] {
   width: 8.33333%;
 }
 
-.grid__col--off-s1 {
+[data-offset*="s1"] {
   margin-left: 8.33333%;
 }
 
-.grid__col--s2 {
+[data-col*="s2"] {
   width: 16.66667%;
 }
 
-.grid__col--off-s2 {
+[data-offset*="s2"] {
   margin-left: 16.66667%;
 }
 
-.grid__col--s3 {
+[data-col*="s3"] {
   width: 25%;
 }
 
-.grid__col--off-s3 {
+[data-offset*="s3"] {
   margin-left: 25%;
 }
 
-.grid__col--s4 {
+[data-col*="s4"] {
   width: 33.33333%;
 }
 
-.grid__col--off-s4 {
+[data-offset*="s4"] {
   margin-left: 33.33333%;
 }
 
-.grid__col--s5 {
+[data-col*="s5"] {
   width: 41.66667%;
 }
 
-.grid__col--off-s5 {
+[data-offset*="s5"] {
   margin-left: 41.66667%;
 }
 
-.grid__col--s6 {
+[data-col*="s6"] {
   width: 50%;
 }
 
-.grid__col--off-s6 {
+[data-offset*="s6"] {
   margin-left: 50%;
 }
 
-.grid__col--s7 {
+[data-col*="s7"] {
   width: 58.33333%;
 }
 
-.grid__col--off-s7 {
+[data-offset*="s7"] {
   margin-left: 58.33333%;
 }
 
-.grid__col--s8 {
+[data-col*="s8"] {
   width: 66.66667%;
 }
 
-.grid__col--off-s8 {
+[data-offset*="s8"] {
   margin-left: 66.66667%;
 }
 
-.grid__col--s9 {
+[data-col*="s9"] {
   width: 75%;
 }
 
-.grid__col--off-s9 {
+[data-offset*="s9"] {
   margin-left: 75%;
 }
 
-.grid__col--s10 {
+[data-col*="s10"] {
   width: 83.33333%;
 }
 
-.grid__col--off-s10 {
+[data-offset*="s10"] {
   margin-left: 83.33333%;
 }
 
-.grid__col--s11 {
+[data-col*="s11"] {
   width: 91.66667%;
 }
 
-.grid__col--off-s11 {
+[data-offset*="s11"] {
   margin-left: 91.66667%;
 }
 
-.grid__col--s12 {
+[data-col*="s12"] {
   width: 100%;
 }
 
-.grid__col--off-s12 {
+[data-offset*="s12"] {
   margin-left: 100%;
 }
 
 @media screen and (min-width: 40em) {
-  [class*="grid__col--m"] {
+  [data-col*="m"] {
     margin-left: 0;
   }
 
-  .grid__col--m1 {
+  [data-col*="m1"] {
     width: 8.33333%;
   }
 
-  .grid__col--off-m1 {
+  [data-offset*="m1"] {
     margin-left: 8.33333%;
   }
 
-  .grid__col--m2 {
+  [data-col*="m2"] {
     width: 16.66667%;
   }
 
-  .grid__col--off-m2 {
+  [data-offset*="m2"] {
     margin-left: 16.66667%;
   }
 
-  .grid__col--m3 {
+  [data-col*="m3"] {
     width: 25%;
   }
 
-  .grid__col--off-m3 {
+  [data-offset*="m3"] {
     margin-left: 25%;
   }
 
-  .grid__col--m4 {
+  [data-col*="m4"] {
     width: 33.33333%;
   }
 
-  .grid__col--off-m4 {
+  [data-offset*="m4"] {
     margin-left: 33.33333%;
   }
 
-  .grid__col--m5 {
+  [data-col*="m5"] {
     width: 41.66667%;
   }
 
-  .grid__col--off-m5 {
+  [data-offset*="m5"] {
     margin-left: 41.66667%;
   }
 
-  .grid__col--m6 {
+  [data-col*="m6"] {
     width: 50%;
   }
 
-  .grid__col--off-m6 {
+  [data-offset*="m6"] {
     margin-left: 50%;
   }
 
-  .grid__col--m7 {
+  [data-col*="m7"] {
     width: 58.33333%;
   }
 
-  .grid__col--off-m7 {
+  [data-offset*="m7"] {
     margin-left: 58.33333%;
   }
 
-  .grid__col--m8 {
+  [data-col*="m8"] {
     width: 66.66667%;
   }
 
-  .grid__col--off-m8 {
+  [data-offset*="m8"] {
     margin-left: 66.66667%;
   }
 
-  .grid__col--m9 {
+  [data-col*="m9"] {
     width: 75%;
   }
 
-  .grid__col--off-m9 {
+  [data-offset*="m9"] {
     margin-left: 75%;
   }
 
-  .grid__col--m10 {
+  [data-col*="m10"] {
     width: 83.33333%;
   }
 
-  .grid__col--off-m10 {
+  [data-offset*="m10"] {
     margin-left: 83.33333%;
   }
 
-  .grid__col--m11 {
+  [data-col*="m11"] {
     width: 91.66667%;
   }
 
-  .grid__col--off-m11 {
+  [data-offset*="m11"] {
     margin-left: 91.66667%;
   }
 
-  .grid__col--m12 {
+  [data-col*="m12"] {
     width: 100%;
   }
 
-  .grid__col--off-m12 {
+  [data-offset*="m12"] {
     margin-left: 100%;
   }
 }
 @media screen and (min-width: 64em) {
-  [class*="grid__col--l"] {
+  [data-col*="l"] {
     margin-left: 0;
   }
 
-  .grid__col--l1 {
+  [data-col*="l1"] {
     width: 8.33333%;
   }
 
-  .grid__col--off-l1 {
+  [data-offset*="l1"] {
     margin-left: 8.33333%;
   }
 
-  .grid__col--l2 {
+  [data-col*="l2"] {
     width: 16.66667%;
   }
 
-  .grid__col--off-l2 {
+  [data-offset*="l2"] {
     margin-left: 16.66667%;
   }
 
-  .grid__col--l3 {
+  [data-col*="l3"] {
     width: 25%;
   }
 
-  .grid__col--off-l3 {
+  [data-offset*="l3"] {
     margin-left: 25%;
   }
 
-  .grid__col--l4 {
+  [data-col*="l4"] {
     width: 33.33333%;
   }
 
-  .grid__col--off-l4 {
+  [data-offset*="l4"] {
     margin-left: 33.33333%;
   }
 
-  .grid__col--l5 {
+  [data-col*="l5"] {
     width: 41.66667%;
   }
 
-  .grid__col--off-l5 {
+  [data-offset*="l5"] {
     margin-left: 41.66667%;
   }
 
-  .grid__col--l6 {
+  [data-col*="l6"] {
     width: 50%;
   }
 
-  .grid__col--off-l6 {
+  [data-offset*="l6"] {
     margin-left: 50%;
   }
 
-  .grid__col--l7 {
+  [data-col*="l7"] {
     width: 58.33333%;
   }
 
-  .grid__col--off-l7 {
+  [data-offset*="l7"] {
     margin-left: 58.33333%;
   }
 
-  .grid__col--l8 {
+  [data-col*="l8"] {
     width: 66.66667%;
   }
 
-  .grid__col--off-l8 {
+  [data-offset*="l8"] {
     margin-left: 66.66667%;
   }
 
-  .grid__col--l9 {
+  [data-col*="l9"] {
     width: 75%;
   }
 
-  .grid__col--off-l9 {
+  [data-offset*="l9"] {
     margin-left: 75%;
   }
 
-  .grid__col--l10 {
+  [data-col*="l10"] {
     width: 83.33333%;
   }
 
-  .grid__col--off-l10 {
+  [data-offset*="l10"] {
     margin-left: 83.33333%;
   }
 
-  .grid__col--l11 {
+  [data-col*="l11"] {
     width: 91.66667%;
   }
 
-  .grid__col--off-l11 {
+  [data-offset*="l11"] {
     margin-left: 91.66667%;
   }
 
-  .grid__col--l12 {
+  [data-col*="l12"] {
     width: 100%;
   }
 
-  .grid__col--off-l12 {
+  [data-offset*="l12"] {
     margin-left: 100%;
   }
 }

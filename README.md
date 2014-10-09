@@ -1,7 +1,6 @@
-Baze-Grid
-=========
+# Baze Grid
 
-Baze Grid is a flexible, percentage base grid system. Adapted from [Bootstrap](http://getbootstrap.com/) methodology. 
+> Baze Grid is a responsive, flexible, percentage base grid system offering clean markup by utilizing both class and data attribute.
 
 - 12 column count (default).
 - 25px gutter size (default).
@@ -10,77 +9,35 @@ Baze Grid is a flexible, percentage base grid system. Adapted from [Bootstrap](h
     - Small, 0 - 639px.
     - Medium, 639px - 1023px.
     - Large, 1024px - beyond.
-- Support offset
-- Support grid without gutter
-- [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)-ish markup
+- Offset
+- No gutter grid
 
 
-##Install
+## Getting Started
 
-[Bower](http://bower.io/): `bower install baze-grid` or download the latest [zip file](https://github.com/ImBobby/Baze-Grid/releases)
-
-
-##How to use
-
-###Basic Markup
-
-```HTML
-<div class="grid">
-    <div class="grid__col {modifier}">...</div>
-    <div class="grid__col {modifier}">...</div>
-</div>
+Install via bower
+```
+bower install baze-grid --save
 ```
 
-to use grid without gutter add `grid--no-gutter` class
+or download the latest [zip file](https://github.com/ImBobby/Baze-Grid/releases)
+
+
+## Usage
 
 ```HTML
-<div class="grid grid--no-gutter">
-    <div class="grid__col {modifier}">...</div>
-    <div class="grid__col {modifier}">...</div>
+<div class="bzg">
+  <div class="bzg_c" data-col="s6">
+      ...
+  </div>
+  <div class="bzg_c" data-col="s6">
+      ...
+  </div>
 </div>
 ```
+Check out [project page for complete documentation](http://imbobby.github.io/Baze-Grid/).
 
-###Available modifier
 
-Grid size
-- small `grid__col--s[1-12]`
-- medium `grid__col--m[1-12]`
-- large `grid__col--l[1-12]`
+## Browser support
 
-Grid offset
-- small `grid__col--off-s[1-12]`
-- medium `grid__col--off-m[1-12]`
-- large `grid__col--off-l[1-12]`
-
-##Example
-
-Equal size column from small to large breakpoint
-
-```HTML
-<div class="grid">
-    <div class="grid__col grid__col--s6">...</div>
-    <div class="grid__col grid__col--s6">...</div>
-</div>
-```
-
-Stacked column on small and equal size column on medium
-```HTML
-<div class="grid">
-    <div class="grid__col grid__col--s12 grid__col--m6">...</div>
-    <div class="grid__col grid__col--s12 grid__col--m6">...</div>
-</div>
-```
-
-Stacked column on small, equal size column on medium, and 1:2 size column on large
-```HTML
-<div class="grid">
-    <div class="grid__col grid__col--s12 grid__col--m6 grid__col--l4">...</div>
-    <div class="grid__col grid__col--s12 grid__col--m6 grid__col--l8">...</div>
-</div>
-```
-
-Check example.html for more examples
-
-##Browser support
-
-Baze Grid should work well on IE8+ and all major mordern browsers.
+Baze Grid has been tested and work awesomely in IE8 (with [respondjs](https://github.com/scottjehl/Respond) polyfill if you need responsive support) and other evergreen browsers.
