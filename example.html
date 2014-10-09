@@ -21,6 +21,11 @@
             text-align: center;
             background: #eee;
         }
+
+        .grid-demo .grid-demo {
+            margin: -.8em 0;
+            background: #ddd;
+        }
     </style>
 </head>
 <body>
@@ -29,107 +34,107 @@
         <h1>Baze Grid</h1>
         <hr>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s1">
+        <div class="bzg">
+            <div class="bzg_c" data-col="s1">
                 <div class="grid-demo">1</div>
             </div>
-            <div class="grid__col grid__col--s11">
+            <div class="bzg_c" data-col="s11">
                 <div class="grid-demo">11</div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s2">
+        <div class="bzg">
+            <div class="bzg_c" data-col="s2">
                 <div class="grid-demo">2</div>
             </div>
-            <div class="grid__col grid__col--s10">
+            <div class="bzg_c" data-col="s10">
                 <div class="grid-demo">10</div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s3">
+        <div class="bzg">
+            <div class="bzg_c" data-col="s3">
                 <div class="grid-demo">3</div>
             </div>
-            <div class="grid__col grid__col--s9">
+            <div class="bzg_c" data-col="s9">
                 <div class="grid-demo">9</div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s4">
+        <div class="bzg">
+            <div class="bzg_c" data-col="s4">
                 <div class="grid-demo">4</div>
             </div>
-            <div class="grid__col grid__col--s8">
+            <div class="bzg_c" data-col="s8">
                 <div class="grid-demo">8</div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s5">
+        <div class="bzg">
+            <div class="bzg_c" data-col="s5">
                 <div class="grid-demo">5</div>
             </div>
-            <div class="grid__col grid__col--s7">
+            <div class="bzg_c" data-col="s7">
                 <div class="grid-demo">7</div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s6">
+        <div class="bzg">
+            <div class="bzg_c" data-col="s6">
                 <div class="grid-demo">6</div>
             </div>
-            <div class="grid__col grid__col--s6">
+            <div class="bzg_c" data-col="s6">
                 <div class="grid-demo">6</div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s7">
+        <div class="bzg">
+            <div class="bzg_c" data-col="s7">
                 <div class="grid-demo">7</div>
             </div>
-            <div class="grid__col grid__col--s5">
+            <div class="bzg_c" data-col="s5">
                 <div class="grid-demo">5</div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s8">
+        <div class="bzg">
+            <div class="bzg_c" data-col="s8">
                 <div class="grid-demo">8</div>
             </div>
-            <div class="grid__col grid__col--s4">
+            <div class="bzg_c" data-col="s4">
                 <div class="grid-demo">4</div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s9">
+        <div class="bzg">
+            <div class="bzg_c" data-col="s9">
                 <div class="grid-demo">9</div>
             </div>
-            <div class="grid__col grid__col--s3">
+            <div class="bzg_c" data-col="s3">
                 <div class="grid-demo">3</div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s10">
+        <div class="bzg">
+            <div class="bzg_c" data-col="s10">
                 <div class="grid-demo">10</div>
             </div>
-            <div class="grid__col grid__col--s2">
+            <div class="bzg_c" data-col="s2">
                 <div class="grid-demo">2</div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s11">
+        <div class="bzg">
+            <div class="bzg_c" data-col="s11">
                 <div class="grid-demo">11</div>
             </div>
-            <div class="grid__col grid__col--s1">
+            <div class="bzg_c" data-col="s1">
                 <div class="grid-demo">1</div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s12">
+        <div class="bzg">
+            <div class="bzg_c" data-col="s12">
                 <div class="grid-demo">12</div>
             </div>
         </div>
@@ -137,119 +142,92 @@
         <h2>Offset</h2>
         <hr>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s1 grid__col--off-s11">
-                <div class="grid-demo">1</div>
+        <div class="bzg">
+            <div class="bzg_c" data-col="s2" data-offset="s3">
+                <div class="grid-demo">offset 3</div>
+            </div>
+            <div class="bzg_c" data-col="s2" data-offset="s2">
+                <div class="grid-demo">offset 3</div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s2 grid__col--off-s10">
-                <div class="grid-demo">2</div>
+        <div class="bzg">
+            <div class="bzg_c" data-col="s8" data-offset="s2">
+                <div class="grid-demo">offset 3</div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s3 grid__col--off-s9">
-                <div class="grid-demo">3</div>
+        <div class="bzg">
+            <div class="bzg_c" data-col="s6" data-offset="s3">
+                <div class="grid-demo">offset 4</div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s4 grid__col--off-s8">
-                <div class="grid-demo">4</div>
+        <div class="bzg">
+            <div class="bzg_c" data-col="s4" data-offset="s4">
+                <div class="grid-demo">offset 8</div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s5 grid__col--off-s7">
-                <div class="grid-demo">5</div>
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="grid__col grid__col--s6 grid__col--off-s6">
-                <div class="grid-demo">6</div>
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="grid__col grid__col--s7 grid__col--off-s5">
-                <div class="grid-demo">7</div>
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="grid__col grid__col--s8 grid__col--off-s4">
-                <div class="grid-demo">8</div>
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="grid__col grid__col--s9 grid__col--off-s3">
-                <div class="grid-demo">9</div>
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="grid__col grid__col--s10 grid__col--off-s2">
-                <div class="grid-demo">10</div>
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="grid__col grid__col--s11 grid__col--off-s1">
-                <div class="grid-demo">11</div>
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="grid__col grid__col--s12">
-                <div class="grid-demo">12</div>
+        <div class="bzg">
+            <div class="bzg_c" data-col="s2" data-offset="s5">
+                <div class="grid-demo">offset 8</div>
             </div>
         </div>
 
         <h2>Nested</h2>
         <hr>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s6">
+        <div class="bzg">
+            <div class="bzg_c" data-col="s6">
+                <div class="grid-demo">
+                    
+                    <div class="bzg">
+                        <div class="bzg_c" data-col="s4">
+                            <div class="grid-demo">4</div>
+                        </div>
+                        <div class="bzg_c" data-col="s8">
+                            <div class="grid-demo">8</div>
+                        </div>
+                    </div>
 
-                <div class="grid">
-                    <div class="grid__col grid__col--s4">
-                        <div class="grid-demo">4</div>
-                    </div>
-                    <div class="grid__col grid__col--s8">
-                        <div class="grid-demo">8</div>
-                    </div>
                 </div>
-                
             </div>
-            <div class="grid__col grid__col--s6">
-                <div class="grid-demo">6</div>
+            <div class="bzg_c" data-col="s6">
+                <div class="grid-demo">
+                    6
+                </div>
             </div>
         </div>
 
         <h2>Responsive</h2>
         <hr>
 
-        <div class="grid">
-            <div class="grid__col grid__col--s12 grid__col--m6 grid__col--l4">
-                <div class="grid-demo">12 small <br>6 medium <br>4 large</div>
+        <div class="bzg">
+            <div class="bzg_c" data-col="s12, m6, l4">
+                <div class="grid-demo">
+                    small 12 <br>
+                    medium 6 <br>
+                    small 4
+                </div>
             </div>
-            <div class="grid__col grid__col--s12 grid__col--m6 grid__col--l8">
-                <div class="grid-demo">12 small <br>6 medium <br>8 large</div>
+            <div class="bzg_c" data-col="s12, m6, l8">
+                <div class="grid-demo">
+                    small 12 <br>
+                    medium 6 <br>
+                    small 8
+                </div>
             </div>
         </div>
 
         <h2>Grid without gutter</h2>
         <hr>
 
-        <div class="grid grid--no-gutter">
-            <div class="grid__col grid__col--s6">
+        <div class="bzg bzg--no-gutter">
+            <div class="bzg_c" data-col="s6">
                 <div class="grid-demo">No Gutter Grid</div>
             </div>
-            <div class="grid__col grid__col--s6">
+            <div class="bzg_c" data-col="s6">
                 <div class="grid-demo">No Gutter Grid</div>
             </div>
         </div>
