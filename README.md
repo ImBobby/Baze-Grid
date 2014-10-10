@@ -7,7 +7,7 @@
 - Configurable SCSS file
 - 3 Breakpoints:
     - Small, 0 - 639px.
-    - Medium, 639px - 1023px.
+    - Medium, 640px - 1023px.
     - Large, 1024px - beyond.
 - Offset
 - No gutter grid
