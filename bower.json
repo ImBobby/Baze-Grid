@@ -1,6 +1,6 @@
 {
   "name": "baze-grid",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Baze Grid is a responsive, flexible, percentage base grid system offering clean markup by utilizing both class and data attribute.",
   "main": ["baze-grid.scss", "baze-grid.css"],
   "authors": "Bobby",
