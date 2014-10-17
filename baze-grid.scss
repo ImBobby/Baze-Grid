@@ -48,11 +48,11 @@ $BZG_LARGE      : 64 * 1em !default;
 
 @for $i from 1 through $BZG_COUNT {
 
-    [data-col*="s#{$i}"] {
+    .bzg_c[data-col*="s#{$i}"] {
         width: bzgSize($i);
     }
 
-    [data-offset*="s#{$i}"] {
+    .bzg_c[data-offset*="s#{$i}"] {
         margin-left: bzgSize($i);
     }
 
@@ -60,16 +60,16 @@ $BZG_LARGE      : 64 * 1em !default;
 
 @media screen and (min-width: #{$BZG_MEDIUM} ) {
 
-    [data-col*="m"] {
+    .bzg_c[data-col*="m"] {
         margin-left: 0;
     }
 
     @for $i from 1 through $BZG_COUNT {
-        [data-col*="m#{$i}"] {
+        .bzg_c[data-col*="m#{$i}"] {
             width: bzgSize($i);
         }
 
-        [data-offset*="m#{$i}"] {
+        .bzg_c[data-offset*="m#{$i}"] {
             margin-left: bzgSize($i);
         }
     }
@@ -78,16 +78,16 @@ $BZG_LARGE      : 64 * 1em !default;
 
 @media screen and (min-width: #{$BZG_LARGE}) {
 
-    [data-col*="l"] {
+    .bzg_c[data-col*="l"] {
         margin-left: 0;
     }
 
     @for $i from 1 through $BZG_COUNT {
-        [data-col*="l#{$i}"] {
+        .bzg_c[data-col*="l#{$i}"] {
             width: bzgSize($i);
         }
 
-        [data-offset*="l#{$i}"] {
+        .bzg_c[data-offset*="l#{$i}"] {
             margin-left: bzgSize($i);
         }
     }
